@@ -1,0 +1,18 @@
+<div class="container mt-5 bg-success">
+  <div class="d-flex justify-content-center">
+    <h1 class="text-light">Portfolio</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mt-5 " *ngFor="let item of skills ,let i = index "[ngStyle] ="{'color':i %2 !==0 ? 'red':'blue'}">
+      <div class="card p-3 " >
+          <div class="d-flex flex-row mb-3 justify-content-center">
+          <h2 >{{item.name}}</h2>
+      </div>
+      <div>
+        <h4 class="text-center">{{item.level}}</h4>
+      </div>
+      </div>
+      </div>
+  </div>
+</div>
+
